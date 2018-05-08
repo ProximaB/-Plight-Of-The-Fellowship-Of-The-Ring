@@ -63,34 +63,7 @@ class Solution
         Orcs.ForEach(Point<int>.Print);
         Console.Error.WriteLine("Start: {0}.", StartPointIndice);
         Console.Error.WriteLine("Stop: {0}.", StopPointIndice);
-
-        ////Find possible paths
-        //Console.Error.WriteLine("Founded routes starting at {0}.", StartPointIndice);
-        //var routes = PathPointsIndices.Where(p => p.Value.Item1 == StartPointIndice).ToDictionary(i => i.Key, i => i.Value);
-        //routes.ToList().ForEach(a => Console.Error.WriteLine(a.Value));
-
-        ////Check which point is possible to go //path shorter than orcs has
-        //routes = routes.Where(r =>
-        //    isPossible<int>(Spots[r.Value.Item1], Spots[r.Value.Item2], Orcs) == true
-        //).ToDictionary(i => i.Key, i => i.Value);
-        //Console.Error.WriteLine("Possible routes");
-        //routes.ToList().ForEach(a => Console.Error.WriteLine(a.Value));
-
-        //foreach ( var r in routes )
-        //{
-        //    Console.Error.WriteLine("Founded routes starting at {0}.", r.Value.Item2);
-        //    var _routes = PathPointsIndices.
-        //    Where(p => {
-        //        return
-        //        p.Value.Item1 == r.Value.Item2 &&
-        //            isPossible<int>(Spots[p.Value.Item1], Spots[r.Value.Item2], Orcs) == true;
-        //    }).ToDictionary(i => i.Key, i => i.Value);
-        //    _routes.ToList().ForEach(a => Console.Error.WriteLine(a.Value));
-
-        //    Console.Error.WriteLine("Possible routes");
-        //    _routes.ToList().ForEach(a => Console.Error.WriteLine(a.Value));
-        //}
-
+        
         //routes.Keys.ToList().ForEach(r => PathPointsIndices.Remove(r));
         HashSet<string> result = FindPaths(routes: PathPointsIndices, pathPointsIndices: PathPointsIndices,
             orcs: Orcs, spots: Spots, startPointIndice: StartPointIndice, stopPointIndice: StopPointIndice, indices: StartPointIndice.ToString());
@@ -183,8 +156,7 @@ class Solution
         foreach ( var r in _routes )
         {
             //Check whetever of given routes already goes to Stop(S) point.
-            if ( r.Value.Item2 == stopPointIndice && isPossible<int>(spots[r.Value.Item1], spots[r.Value.Item2], orcs) ||
-                 r.Value.Item1 == stopPointIndice && isPossible<int>(spots[r.Value.Item1], spots[r.Value.Item2], orcs) )
+            if ( r.Value.Item2 == stopPointIndice && isPossible<int>(spots[r.Value.Item1], spots[r.Value.Item2], orcs))
             {
                 _indicies += " " + r.Value.Item2;
                 stringRouts.Add(_indicies);
