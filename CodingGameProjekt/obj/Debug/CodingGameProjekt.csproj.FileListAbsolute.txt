@@ -1,0 +1,7 @@
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\bin\Debug\CodingGameProjekt.exe.config
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\bin\Debug\CodingGameProjekt.exe
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\bin\Debug\CodingGameProjekt.pdb
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\obj\Debug\CodingGameProjekt.csproj.CoreCompileInputs.cache
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\obj\Debug\CodingGameProjekt.exe
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\obj\Debug\CodingGameProjekt.pdb
+C:\Users\barte\source\repos\CodingGameProjekt\CodingGameProjekt\obj\Debug\CodingGameProjekt.csprojResolveAssemblyReference.cache
